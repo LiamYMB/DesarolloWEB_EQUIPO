@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes | DevLaunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="dashboard-page messages-page">
+    <header class="dashboard-header"><nav class="container-fluid dashboard-navbar" aria-label="Navegación principal"><a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="DevLaunch, inicio"></a><ul class="navbar-nav flex-row gap-3"><li class="nav-item"><a class="nav-link" href="explorar.html">Explorar proyectos</a></li><li class="nav-item"><a class="nav-link" href="proyectos.html">Mis proyectos</a></li><li class="nav-item"><a class="nav-link" href="mi-perfil.html">Mi perfil</a></li></ul><a class="dashboard-user" href="mi-perfil.html"><span class="avatar">LM</span><span>Liam Magaña</span></a></nav></header>
+    <main class="container messages-main">
+        <header class="messages-title"><section><p class="eyebrow eyebrow-purple">Tu espacio de comunicación</p><h1>Mensajes</h1><p>Conversa directamente con personas interesadas en tus proyectos.</p></section><span class="demo-badge">Conversación de demostración</span></header>
+        <section class="messages-shell">
+            <aside class="inbox-panel"><header><h2>Bandeja de entrada</h2><label class="visually-hidden" for="buscar-contacto">Buscar conversación</label><input class="form-control auth-input" id="buscar-contacto" type="search" placeholder="Buscar conversación"></header>
+                <nav class="inbox-list" aria-label="Conversaciones"><a class="inbox-contact active" href="#conversacion"><span class="avatar avatar-orange">AC</span><span><strong>Andrea Campos</strong><small>Me gustaría conocer más del proyecto...</small></span><time>10:42</time></a><a class="inbox-contact" href="#conversacion"><span class="avatar">NV</span><span><strong>Nova Ventures</strong><small>Gracias por compartir los avances.</small></span><time>Ayer</time></a><a class="inbox-contact" href="#conversacion"><span class="avatar avatar-green">JR</span><span><strong>Jorge Ruiz</strong><small>¿Tienes disponibilidad para conversar?</small></span><time>Mar</time></a></nav>
+            </aside>
+            <section class="chat-panel" id="conversacion"><header class="chat-header"><span class="avatar avatar-orange">AC</span><section><strong>Andrea Campos</strong><small>Patrocinadora · Activa ahora</small></section><a href="perfil.html" aria-label="Ver perfil de Andrea">Ver perfil ↗</a></header>
+                <section class="chat-context"><span>Conversación sobre</span><a href="detalle-proyecto.html"><strong>Nebula</strong><small>Orquestación de microservicios</small></a></section>
+                <section class="chat-history" aria-label="Historial de mensajes"><p class="chat-date">HOY</p><article class="chat-message received"><p>Hola Elena, estuve revisando Nebula y me interesa conocer un poco más sobre la etapa actual del prototipo.</p><time>10:38</time></article><article class="chat-message sent"><p>¡Hola Andrea! Gracias por tu interés. Ya tenemos lista la primera prueba de despliegue y estamos trabajando en sumar nuevas integraciones.</p><time>10:40 · Enviado</time></article><article class="chat-message received"><p>¡Qué bien! ¿Podrías contarme qué tipo de apoyo te ayudaría más en esta etapa?</p><time>10:42</time></article></section>
+                <form class="chat-compose" action="#conversacion" method="post"><label class="visually-hidden" for="mensaje">Escribe un mensaje</label><textarea id="mensaje" name="mensaje" rows="2" placeholder="Escribe un mensaje..."></textarea><button type="submit" aria-label="Enviar mensaje">Enviar <span aria-hidden="true">→</span></button></form>
+            </section>
+        </section>
+        <p class="messages-disclaimer">Las conversaciones mostradas son contenido de demostración. La mensajería requiere conexión a un servicio para enviar y guardar mensajes.</p>
+    </main>
+</body>
+</html>
