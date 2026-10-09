@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar contraseña | DevLaunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/recuperar.css">
+</head>
+<body class="pagina-acceso">
+    <header class="encabezado-acceso"><nav class="container navbar" aria-label="Navegación principal"><a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="DevLaunch, inicio"></a><ul class="navbar-nav flex-row align-items-center gap-3"><li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li><li class="nav-item"><a class="nav-link" href="registro.html">Crear cuenta</a></li></ul></nav></header>
+    <main class="principal-recuperacion container">
+        <section class="tarjeta-recuperacion">
+            <a class="enlace-regreso-recuperacion" href="login.html">← Volver al inicio de sesión</a>
+            <p class="sobretitulo sobretitulo-morado">Recuperación de acceso</p>
+            <h1>¿Olvidaste tu contraseña?</h1>
+            <p class="introduccion-acceso">Escribe el correo asociado a tu cuenta. Te enviaremos los pasos para recuperar el acceso.</p>
+            <form action="#" method="post">
+                <label class="form-label" for="correo">Correo electrónico</label>
+                <input class="form-control form-control-lg campo-acceso" id="correo" name="correo" type="email" placeholder="tu-correo@ejemplo.com" autocomplete="email" required>
+                <button class="btn btn-primary btn-lg w-100 boton-enviar-acceso" type="submit">Enviar instrucciones <span aria-hidden="true">→</span></button>
+            </form>
+            <p class="aviso-legal-acceso nota-recuperacion">Si la dirección está asociada a una cuenta, recibirás un mensaje con más información.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | DevLaunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="pagina-acceso">
+    <header class="encabezado-acceso">
+        <nav class="container navbar" aria-label="Navegación principal">
+            <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="DevLaunch, inicio"></a>
+            <ul class="navbar-nav flex-row align-items-center gap-3"><li class="nav-item"><a class="nav-link" href="explorar.html">Explorar</a></li><li class="nav-item d-none d-sm-block"><a class="nav-link" href="registro.html">Crear cuenta</a></li></ul>
+        </nav>
+    </header>
+    <main class="principal-acceso container">
+        <section class="contenedor-acceso contenedor-inicio-sesion row g-0">
+            <section class="panel-formulario-acceso col-12">
+                <section class="contenedor-formulario-acceso">
+                    <nav class="pestanas-acceso" aria-label="Acceso a cuenta"><a class="activo" href="login.html" aria-current="page">Iniciar sesión</a><a href="registro.html">Crear cuenta gratis</a></nav>
+                    <h2>Inicia sesión en DevLaunch</h2>
+                    <form action="#" method="post">
+                        <fieldset class="selector-rol-acceso"><legend>¿Cómo participas en DevLaunch?</legend><label><input type="radio" name="rol" value="freelancer" checked> Freelancer</label><label><input type="radio" name="rol" value="patrocinador"> Patrocinador</label></fieldset>
+                        <label class="form-label" for="correo">Correo electrónico</label>
+                        <input class="form-control form-control-lg campo-acceso" type="email" id="correo" name="correo" placeholder="tu-correo@ejemplo.com" autocomplete="email" required>
+                        <section class="etiqueta-contrasena"><label class="form-label" for="contrasena">Contraseña</label><a href="recuperar.html">¿Olvidaste tu contraseña?</a></section>
+                        <input class="form-control form-control-lg campo-acceso" type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" autocomplete="current-password" required>
+                        <label class="opcion-recordar"><input type="checkbox" name="recordar"> <span>Recordar mi sesión</span></label>
+                        <button class="btn btn-primary btn-lg w-100 boton-enviar-acceso" type="submit">Iniciar sesión <span aria-hidden="true">→</span></button>
+                    </form>
+                    <p class="enlace-alternar-acceso">¿Todavía no tienes cuenta? <a href="registro.html">Regístrate gratis</a></p>
+                    <p class="aviso-legal-acceso">Al continuar, aceptas los <a href="#terminos">Términos de servicio</a> y la <a href="#privacidad">Política de privacidad</a>.</p>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

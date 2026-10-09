@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta | DevLaunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body class="pagina-acceso">
+    <header class="encabezado-acceso"><nav class="container navbar" aria-label="Navegación principal"><a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="DevLaunch, inicio"></a><ul class="navbar-nav flex-row align-items-center gap-3"><li class="nav-item"><a class="nav-link" href="index.html">Explorar</a></li><li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li></ul></nav></header>
+    <main class="principal-acceso container principal-registro">
+        <section class="contenedor-acceso contenedor-inicio-sesion contenedor-registro row g-0">
+            <section class="panel-formulario-acceso col-12">
+                <section class="contenedor-formulario-acceso contenedor-formulario-registro">
+                    <nav class="pestanas-acceso" aria-label="Acceso a cuenta"><a href="login.html">Iniciar sesión</a><a class="activo" href="registro.html" aria-current="page">Crear cuenta gratis</a></nav>
+                    <h2>Crea tu cuenta</h2>
+                    <form action="#" method="post">
+                        <fieldset class="selector-rol" id="rol-freelancer"><legend>Quiero participar como</legend>
+                            <label class="opcion-rol"><input type="radio" name="rol" value="freelancer" required><span class="icono-opcion-rol">&lt;/&gt;</span><span><strong>Freelancer</strong><small>Quiero presentar y desarrollar proyectos.</small></span></label>
+                            <label class="opcion-rol" id="rol-patrocinador"><input type="radio" name="rol" value="patrocinador"><span class="icono-opcion-rol">✦</span><span><strong>Patrocinador</strong><small>Quiero descubrir y apoyar proyectos.</small></span></label>
+                        </fieldset>
+                        <section class="row g-3">
+                            <article class="col-md-6"><label class="form-label" for="nombre">Nombre completo</label><input class="form-control campo-acceso" id="nombre" name="nombre" type="text" placeholder="Ej. Elena Vega" autocomplete="name" required></article>
+                            <article class="col-md-6"><label class="form-label" for="usuario">Nombre de usuario</label><input class="form-control campo-acceso" id="usuario" name="usuario" type="text" placeholder="@tu_usuario" autocomplete="username" required></article>
+                            <article class="col-12"><label class="form-label" for="correo">Correo electrónico</label><input class="form-control campo-acceso" id="correo" name="correo" type="email" placeholder="tu-correo@ejemplo.com" autocomplete="email" required></article>
+                            <article class="col-12"><label class="form-label" for="contrasena">Contraseña</label><input class="form-control campo-acceso" id="contrasena" name="contrasena" type="password" placeholder="Mínimo 8 caracteres" minlength="8" autocomplete="new-password" required></article>
+                        </section>
+                        <label class="opcion-recordar opcion-terminos"><input type="checkbox" required> <span>Acepto los <a href="#terminos">Términos de servicio</a> y la <a href="#privacidad">Política de privacidad</a>.</span></label>
+                        <button class="btn btn-primary btn-lg w-100 boton-enviar-acceso" type="submit">Crear cuenta gratuita <span aria-hidden="true">→</span></button>
+                    </form>
+                    <p class="enlace-alternar-acceso">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

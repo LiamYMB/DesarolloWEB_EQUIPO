@@ -1,0 +1,96 @@
+.pagina-acceso {
+    background: #17131f url('../img/Fondo.png') center top/cover fixed no-repeat;
+}
+.principal-registro {
+    padding-top: 24px;
+}
+.contenedor-registro {
+    width: 100%;
+    max-width: 620px;
+    margin: 24px auto;
+    border: 1px solid #e5e5eb;
+    border-radius: 10px;
+}
+.contenedor-registro .panel-formulario-acceso {
+    padding: 32px 36px;
+}
+.contenedor-formulario-registro {
+    width: 100%;
+}
+.contenedor-registro .pestanas-acceso {
+    margin-bottom: 24px;
+}
+.selector-rol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 18px;
+    padding: 0;
+    border: 0;
+}
+.selector-rol legend {
+    width: 100%;
+    margin-bottom: 2px;
+    color: #242633;
+    font-size: .82rem;
+    font-weight: 700;
+}
+.opcion-rol {
+    display: flex;
+    flex: 1 1 190px;
+    align-items: center;
+    gap: 11px;
+    min-height: 64px;
+    padding: 10px 12px;
+    border: 1px solid #e6e7f1;
+    border-radius: 7px;
+    background: #fff;
+    cursor: pointer;
+}
+.opcion-rol input {
+    margin: 0;
+    accent-color: #7138df;
+}
+.icono-opcion-rol {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border-radius: 9px;
+    background: #f0edff;
+    color: #7138df;
+    font-size: .75rem;
+    font-weight: 800;
+}
+.opcion-rol strong,
+.opcion-rol small {
+    display: block;
+}
+.opcion-rol strong {
+    font-size: .84rem;
+}
+.opcion-rol small {
+    margin-top: 3px;
+    color: #555764;
+    font-size: .72rem;
+    line-height: 1.45;
+}
+.contenedor-registro .campo-acceso {
+    min-height: 46px;
+    font-size: .88rem;
+}
+.contenedor-registro .form-label {
+    color: #242633;
+    font-size: .82rem;
+}
+.contenedor-registro .opcion-terminos {
+    margin: 18px 0;
+    color: #454754;
+    font-size: .78rem;
+}
+.contenedor-registro .opcion-terminos a {
+    font-weight: 600;
+}
+.contenedor-registro .enlace-alternar-acceso {
+    font-size: .82rem;
+}

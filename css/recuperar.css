@@ -1,0 +1,55 @@
+.introduccion-acceso {
+    margin: 9px 0 25px;
+    color: #77778b;
+    font-size: .84rem;
+    line-height: 1.65;
+}
+
+.principal-recuperacion {
+    display: grid;
+    min-height: 700px;
+    place-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.tarjeta-recuperacion {
+    width: 100%;
+    max-width: 480px;
+    padding: 32px;
+    border: 1px solid rgba(232,233,242,.8);
+    border-radius: 17px;
+    background: #fff;
+}
+
+.enlace-regreso-recuperacion {
+    display: inline-block;
+    margin-bottom: 35px;
+    color: #79798b;
+    font-size: .69rem;
+    font-weight: 700;
+}
+
+.tarjeta-recuperacion .sobretitulo {
+    margin-bottom: 8px;
+}
+
+.tarjeta-recuperacion h1 {
+    margin: 0;
+    color: #1e2536;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -.05em;
+}
+
+.tarjeta-recuperacion .introduccion-acceso {
+    margin: 11px 0 23px;
+}
+
+.tarjeta-recuperacion .boton-enviar-acceso {
+    margin-top: 18px;
+}
+
+.nota-recuperacion {
+    margin-top: 20px;
+}

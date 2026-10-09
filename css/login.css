@@ -1,0 +1,73 @@
+.pagina-acceso {
+    background: #17131f url('../img/Fondo.png') center top/cover fixed no-repeat;
+}
+.selector-rol-acceso {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 18px;
+    padding: 0;
+    border: 0;
+}
+
+.selector-rol-acceso legend {
+    width: 100%;
+    margin-bottom: 2px;
+    color: #3e4152;
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+.selector-rol-acceso label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 13px;
+    border: 1px solid #e5e6f1;
+    border-radius: 9px;
+    color: #57596a;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.selector-rol-acceso input {
+    accent-color: #7138df;
+}
+
+.etiqueta-contrasena {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.etiqueta-contrasena a {
+    margin-bottom: 7px;
+    font-size: .68rem;
+    font-weight: 600;
+}
+
+.contenedor-inicio-sesion {
+    width: 100%;
+    max-width: 520px;
+    min-height: 0;
+    margin: 40px auto;
+    border: 1px solid #e5e5eb;
+    border-radius: 10px;
+}
+.contenedor-inicio-sesion .panel-formulario-acceso {
+    padding: 36px;
+}
+.contenedor-inicio-sesion .pestanas-acceso {
+    margin-bottom: 25px;
+}
+.contenedor-inicio-sesion .contenedor-formulario-acceso h2 {
+    color: #171a2b;
+    font-size: 1.65rem;
+    letter-spacing: -.025em;
+}
+.contenedor-inicio-sesion .introduccion-acceso {
+    display: none;
+}
+.contenedor-inicio-sesion .boton-enviar-acceso {
+}
