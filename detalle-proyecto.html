@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del proyecto | DevLaunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/detalle-proyecto.css">
+</head>
+<body class="pagina-explorar">
+    <header class="encabezado-sitio"><nav class="navbar navbar-expand-lg container" aria-label="Navegación principal"><a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="DevLaunch, inicio"></a><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3"><li class="nav-item"><a class="nav-link" href="explorar.html">Explorar proyectos</a></li><li class="nav-item"><a class="nav-link" href="mi-perfil.html">Mi perfil</a></li><li class="nav-item"><a class="btn btn-primary rounded-pill px-4" href="registro.html">Crear cuenta</a></li></ul></nav></header>
+    <main class="container principal-detalle">
+        <nav class="ruta-navegacion" aria-label="Ruta de navegación">
+            <a href="explorar.html">Explorar proyectos</a>
+            <span aria-hidden="true">/</span>
+            <span>Nebula</span>
+        </nav>
+
+        <section class="distribucion-detalle row g-4">
+            <article class="col-lg-8">
+                <header class="encabezado-detalle">
+                    <p class="datos-proyecto"><span>IA y Cloud</span><span>Prototipo validado</span></p>
+                    <h1>Nebula</h1>
+                    <p>Herramienta para desplegar y monitorear microservicios desde un solo lugar.</p>
+                    <section class="datos-creador">
+                        <span class="avatar">EV</span>
+                        <span>Elena Vega <small>Guadalajara, México</small></span>
+                    </section>
+                </header>
+
+                <section class="ilustracion-detalle ilustracion-nebula" aria-label="Imagen del proyecto Nebula">
+                    <span class="orbita-ilustracion" aria-hidden="true"></span>
+                </section>
+
+                <nav class="pestanas-detalle" aria-label="Secciones del proyecto">
+                    <a class="activo" href="#descripcion">Resumen</a>
+                    <a href="#avances">Avances</a>
+                    <a href="#documentos">Recursos</a>
+                </nav>
+
+                <section class="seccion-detalle" id="descripcion">
+                    <h2>Resumen</h2>
+                    <p>Nebula organiza servicios, dependencias y versiones para facilitar su despliegue y seguimiento.</p>
+                    <h3>Tecnologías</h3>
+                    <ul class="lista-etiquetas">
+                        <li>Rust</li><li>Kubernetes</li><li>Wasm</li><li>Cloud</li>
+                    </ul>
+                </section>
+
+                <section class="seccion-detalle" id="avances">
+                    <h2>Avances</h2>
+                    <article class="hito-proyecto">
+                        <span aria-hidden="true"></span>
+                        <section><small>12 de septiembre</small><h3>Prueba con tres servicios</h3></section>
+                    </article>
+                    <article class="hito-proyecto">
+                        <span aria-hidden="true"></span>
+                        <section><small>28 de agosto</small><h3>Consola de monitoreo lista</h3></section>
+                    </article>
+                </section>
+
+                <section class="seccion-detalle" id="documentos">
+                    <h2>Recursos</h2>
+                    <ul class="lista-recursos">
+                        <li><span aria-hidden="true">C</span><strong>Repositorio</strong><a href="#repositorio">Abrir</a></li>
+                        <li><span aria-hidden="true">P</span><strong>Presentación</strong><a href="#presentacion">Consultar</a></li>
+                    </ul>
+                </section>
+            </article>
+
+            <aside class="col-lg-4">
+                <section class="tarjeta-patrocinio">
+                    <h2>Apoya Nebula</h2>
+                    <section class="resumen-meta">
+                        <strong>$18,400</strong>
+                        <span>de $20,000 USD</span>
+                    </section>
+                    <progress class="progreso-meta" value="92" max="100">92%</progress>
+                    <p class="nota-meta">92% de la meta · 342 personas interesadas</p>
+                    <a class="btn btn-primary w-100 rounded-pill" href="#enviar-propuesta">Enviar propuesta</a>
+                    <a class="enlace-mensaje" href="mensajes.html">Contactar a Elena</a>
+                </section>
+            </aside>
+        </section>
+
+        <section class="tarjeta-formulario-propuesta" id="enviar-propuesta">
+            <header><h2>Proponer apoyo</h2></header>
+            <form action="#enviar-propuesta" method="post">
+                <section class="row g-3">
+                    <article class="col-md-6">
+                        <label class="form-label" for="monto-propuesta">Monto (USD)</label>
+                        <input class="form-control campo-acceso" id="monto-propuesta" name="monto-propuesta" type="number" min="1" placeholder="Ej. 500" required>
+                    </article>
+                    <article class="col-md-6">
+                        <label class="form-label" for="tipo-apoyo">Tipo de apoyo</label>
+                        <select class="form-select campo-acceso" id="tipo-apoyo" name="tipo-apoyo">
+                            <option>Apoyo económico</option><option>Mentoría</option><option>Infraestructura</option><option>Otro</option>
+                        </select>
+                    </article>
+                    <article class="col-12">
+                        <label class="form-label" for="condiciones">Mensaje</label>
+                        <textarea class="form-control campo-acceso" id="condiciones" name="condiciones" rows="3" placeholder="Describe brevemente tu propuesta."></textarea>
+                    </article>
+                </section>
+                <footer class="acciones-formulario">
+                    <a class="btn btn-light rounded-pill px-4" href="explorar.html">Cancelar</a>
+                    <button class="btn btn-primary rounded-pill px-4" type="submit">Enviar propuesta</button>
+                </footer>
+                <p class="ayuda-formulario">Para enviar, <a href="login.html">inicia sesión</a> o <a href="registro.html">crea una cuenta</a>.</p>
+            </form>
+        </section>
+    </main>
+    <footer class="pie-sitio"><section class="container"><a href="index.html"><img src="img/Logo.png" alt="DevLaunch"></a><p>Ideas que se convierten en soluciones.</p><small>© 2025 DevLaunch</small></section></footer>
+</body>
+</html>

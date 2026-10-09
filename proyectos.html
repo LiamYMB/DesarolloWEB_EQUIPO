@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis proyectos | DevLaunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+</head>
+<body class="pagina-panel pagina-proyectos">
+    <header class="encabezado-panel">
+        <nav class="container-fluid barra-navegacion-panel" aria-label="Navegación principal">
+            <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="DevLaunch, inicio"></a>
+            <form class="busqueda-panel" action="#proyectos" method="get"><label class="visually-hidden" for="buscar">Buscar en mis proyectos</label><input id="buscar" type="search" placeholder="Buscar en mis proyectos"><button type="submit" aria-label="Buscar">⌕</button></form>
+            <a class="usuario-panel" href="mi-perfil.html"><span class="avatar">LM</span><span>Liam Magaña</span><span aria-hidden="true">⌄</span></a>
+        </nav>
+    </header>
+    <main class="distribucion-panel">
+        <aside class="barra-lateral-panel barra-lateral-proyectos">
+            <p class="etiqueta-lateral">MIS PROYECTOS</p>
+            <nav class="navegacion-proyectos-lateral" aria-label="Secciones de mis proyectos">
+                <a class="enlace-lateral activo" href="#resumen" aria-current="page">Resumen</a>
+                <a class="enlace-lateral" href="#proyectos">Proyectos</a>
+                <a class="enlace-lateral" href="#documentos">Documentos</a>
+            </nav>
+            <p class="etiqueta-lateral etiqueta-lateral-principal">OTRAS ÁREAS</p>
+            <nav class="navegacion-principal-lateral" aria-label="Otras áreas">
+                <a class="enlace-lateral" href="mensajes.html">Mensajes</a>
+                <a class="enlace-lateral" href="explorar.html">Explorar proyectos</a>
+                <a class="enlace-lateral" href="mi-perfil.html">Mi perfil</a>
+            </nav>
+            <a class="enlace-lateral enlace-inicio-lateral" href="index.html">Volver al inicio</a>
+        </aside>
+        <section class="contenido-panel">
+            <header class="bienvenida-panel bienvenida-proyectos" id="resumen"><section><h1>Mis proyectos</h1><p>Tus ideas y su avance, en un solo lugar.</p></section><a class="btn btn-primary rounded-pill px-4" href="#nuevo-proyecto">Nuevo proyecto</a></header>
+            <section class="tarjeta-panel panel-proyectos" id="proyectos">
+                <article class="fila-proyecto">
+                    <section class="simbolo-proyecto" aria-hidden="true">C</section><section class="informacion-proyecto"><p class="estado-proyecto"><span></span> En desarrollo</p><h3>CodeNest</h3><p>Entorno colaborativo para aprender programación construyendo en equipo.</p><ul class="lista-etiquetas"><li>React</li><li>TypeScript</li><li>Educación</li></ul></section><section class="actividad-proyecto"><span>Meta de patrocinio</span><strong>$3,200 <small>/ $5,000</small></strong></section><nav class="acciones-proyecto" aria-label="Acciones de CodeNest"><a href="#editar-proyecto">Consultar proyecto →</a><a href="#documentos">Documentos</a><a href="#eliminar-proyecto">Eliminar</a></nav>
+                </article>
+                <article class="fila-proyecto">
+                    <section class="simbolo-proyecto simbolo-proyecto-morado" aria-hidden="true">D</section><section class="informacion-proyecto"><p class="estado-proyecto estado-borrador"><span></span> Borrador</p><h3>DevLaunch</h3><p>Plataforma de conexión y patrocinio para desarrolladores independientes.</p><ul class="lista-etiquetas"><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul></section><section class="actividad-proyecto"><span>Meta de patrocinio</span><strong>$0 <small>/ $2,500</small></strong></section><nav class="acciones-proyecto" aria-label="Acciones de DevLaunch"><a href="#editar-proyecto">Consultar proyecto →</a><a href="#documentos">Documentos</a><a href="#eliminar-proyecto">Eliminar</a></nav>
+                </article>
+            </section>
+            <section class="seccion-inferior-panel row g-3">
+                <article class="col-xl-6" id="propuestas"><section class="tarjeta-panel panel-inferior"><header class="encabezado-panel-seccion"><section><h2>Propuestas recibidas</h2><p>Revisa las condiciones que te compartieron.</p></section><span class="etiqueta-panel">2 nuevas</span></header><article class="propuesta-recibida"><span class="avatar avatar-pequeno">NV</span><section><strong>Nova Ventures</strong><p>CodeNest · Apoyo propuesto: $2,000 USD</p><small>Hace 2 horas</small></section><a href="#ver-propuesta">Ver</a></article><article class="propuesta-recibida"><span class="avatar avatar-pequeno avatar-verde">AC</span><section><strong>Andrea Campos</strong><p>CodeNest · Apoyo propuesto: $800 USD</p><small>Ayer</small></section><a href="#ver-propuesta">Ver</a></article></section></article>
+                <article class="col-xl-6" id="interesados"><section class="tarjeta-panel panel-inferior"><header class="encabezado-panel-seccion"><section><h2>Personas interesadas</h2><p>Usuarios que siguen de cerca tus proyectos.</p></section><a class="enlace-texto" href="#todos-interesados">Ver todos →</a></header><article class="persona-interesada"><span class="avatar avatar-pequeno avatar-naranja">MP</span><section><strong>Mariana Pérez</strong><p>Interesada en CodeNest</p></section><a href="#perfil-mariana" aria-label="Ver perfil de Mariana">↗</a></article><article class="persona-interesada"><span class="avatar avatar-pequeno">JR</span><section><strong>Jorge Ruiz</strong><p>Visitó tu proyecto hace 1 día</p></section><a href="#perfil-jorge" aria-label="Ver perfil de Jorge">↗</a></article></section></article>
+            </section>
+            <section class="tarjeta-panel panel-formulario-proyecto" id="nuevo-proyecto">
+                <header class="encabezado-panel-seccion"><section><p class="sobretitulo sobretitulo-morado">Comparte tu próxima idea</p><h2>Crear / editar proyecto</h2><p>Completa la información principal de tu prototipo.</p></section></header>
+                <form action="#nuevo-proyecto" method="post" class="formulario-proyecto">
+                    <section class="row g-3">
+                        <article class="col-md-8"><label class="form-label" for="nombre-proyecto">Nombre del proyecto</label><input class="form-control campo-acceso" id="nombre-proyecto" name="nombre" type="text" placeholder="Ej. CodeNest" required></article>
+                        <article class="col-md-4"><label class="form-label" for="etapa-proyecto">Etapa actual</label><select class="form-select campo-acceso" id="etapa-proyecto" name="etapa"><option>Selecciona una etapa</option><option>Idea</option><option>Prototipo</option><option>En desarrollo</option><option>Producto activo</option></select></article>
+                        <article class="col-12"><label class="form-label" for="descripcion-proyecto">Descripción</label><textarea class="form-control campo-acceso" id="descripcion-proyecto" name="descripcion" rows="4" placeholder="¿Qué problema resuelve y cómo funciona?" required></textarea></article>
+                        <article class="col-md-6"><label class="form-label" for="monto-proyecto">Monto de patrocinio buscado (USD)</label><input class="form-control campo-acceso" id="monto-proyecto" name="monto" type="number" min="1" placeholder="2500"></article>
+                        <article class="col-md-6"><label class="form-label" for="enlace-proyecto">Enlace al prototipo o repositorio</label><input class="form-control campo-acceso" id="enlace-proyecto" name="enlace" type="url" placeholder="https://"></article>
+                        <article class="col-12" id="documentos"><label class="form-label" for="archivos-proyecto">Documentos del proyecto</label><input class="form-control campo-acceso campo-archivos" id="archivos-proyecto" name="documentos" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.png,.jpg"><small class="ayuda-formulario">Presentaciones, documentos técnicos e imágenes del prototipo.</small></article>
+                    </section>
+                    <footer class="acciones-formulario"><button class="btn btn-light rounded-pill px-4" type="reset">Limpiar</button><button class="btn btn-primary rounded-pill px-4" type="submit">Guardar proyecto</button></footer>
+                </form>
+            </section>
+            <footer class="pie-panel"><p>Tu trabajo y tus avances, en un solo lugar.</p><a href="index.html">DevLaunch</a></footer>
+        </section>
+    </main>
+</body>
+</html>

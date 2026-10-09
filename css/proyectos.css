@@ -1,0 +1,460 @@
+.estado-proyecto span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: #54dfae;
+}
+
+.pagina-proyectos {
+    background: #17131f url('../img/Fondo.png') center top/cover fixed no-repeat;
+}
+
+.busqueda-panel {
+    display: flex;
+    width: 360px;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #e9eaf2;
+    border-radius: 10px;
+    background: #f8f8fc;
+}
+
+.busqueda-panel input {
+    width: 100%;
+    min-height: 37px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font: inherit;
+    font-size: .7rem;
+}
+
+.busqueda-panel button {
+    border: 0;
+    background: transparent;
+    color: #757487;
+    font-size: 1.2rem;
+}
+
+.barra-lateral-proyectos .etiqueta-lateral {
+    margin: 8px 0 7px;
+    padding: 0 12px;
+    color: #888998;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.navegacion-proyectos-lateral .enlace-lateral {
+    min-height: 38px;
+    padding-left: 24px;
+    color: #646675;
+    font-size: .8rem;
+}
+
+.barra-lateral-proyectos .etiqueta-lateral.etiqueta-lateral-principal {
+    margin-top: 28px;
+    color: #7138df;
+    font-size: .72rem;
+}
+
+.barra-lateral-panel .navegacion-principal-lateral {
+    gap: 7px;
+    margin-top: 0;
+}
+
+.navegacion-principal-lateral .enlace-lateral {
+    min-height: 44px;
+    padding-left: 12px;
+    background: #f4f1fa;
+    color: #282b3d;
+    font-size: .88rem;
+    font-weight: 700;
+}
+
+.navegacion-principal-lateral .enlace-lateral:hover {
+    background: #ebe5f7;
+    color: #5723c2;
+}
+
+.enlace-inicio-lateral {
+    min-height: 44px;
+    margin-top: auto;
+    border-top: 1px solid #e8e9f2;
+    border-radius: 0;
+    color: #4a4c59;
+    font-size: .82rem;
+}
+
+.bienvenida-panel .sobretitulo {
+    margin-bottom: 7px;
+    font-size: .62rem;
+}
+
+.bienvenida-panel p:not(.sobretitulo) {
+    margin: 7px 0 0;
+    color: #808092;
+    font-size: .75rem;
+}
+
+.tarjeta-panel {
+    border: 1px solid #ebecf2;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.panel-proyectos {
+    margin-top: 19px;
+    padding: 20px 22px 4px;
+}
+
+.enlace-texto {
+    font-size: .66rem;
+    font-weight: 700;
+}
+
+.fila-proyecto {
+    display: grid;
+    grid-template-columns: 44px 1fr 155px auto;
+    align-items: center;
+    gap: 15px;
+    padding: 19px 0;
+    border-bottom: 1px solid #eff0f4;
+}
+
+.fila-proyecto:last-child {
+    border-bottom: 0;
+}
+
+.simbolo-proyecto {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 12px;
+    background: #eaf7f3;
+    color: #198665;
+    font-family: monospace;
+    font-size: .81rem;
+    font-weight: 700;
+}
+
+.simbolo-proyecto-morado {
+    background: #f0eaff;
+    color: #7541d6;
+}
+
+.estado-proyecto {
+    margin: 0 0 4px;
+    color: #168362;
+    font-size: .53rem;
+    font-weight: 800;
+    letter-spacing: .06em;
+}
+
+.estado-proyecto span {
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+}
+
+.estado-proyecto.estado-borrador {
+    color: #a27a25;
+}
+
+.estado-proyecto.estado-borrador span {
+    background: #f0bf4d;
+}
+
+.informacion-proyecto h3 {
+    margin: 0 0 5px;
+    color: #292c3e;
+    font-size: .83rem;
+    font-weight: 800;
+}
+
+.informacion-proyecto > p:not(.estado-proyecto) {
+    max-width: 530px;
+    margin: 0;
+    color: #858697;
+    font-size: .63rem;
+    line-height: 1.5;
+}
+
+.actividad-proyecto {
+    display: grid;
+    gap: 5px;
+    color: #898a99;
+    font-size: .56rem;
+}
+
+.actividad-proyecto strong {
+    color: #323548;
+    font-size: .79rem;
+}
+
+.actividad-proyecto strong small {
+    color: #898a99;
+    font-size: .61rem;
+    font-weight: 500;
+}
+
+.actividad-proyecto progress {
+    width: 100%;
+    height: 6px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 10px;
+    background: #ececf5;
+}
+
+.actividad-proyecto progress::-webkit-progress-bar {
+    border-radius: 10px;
+    background: #ececf5;
+}
+
+.actividad-proyecto progress::-webkit-progress-value {
+    border-radius: 10px;
+    background: #7138df;
+}
+
+.actividad-proyecto progress::-moz-progress-bar {
+    border-radius: 10px;
+    background: #7138df;
+}
+
+.acciones-proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.acciones-proyecto a {
+    color: #77788b;
+    font-size: .59rem;
+    font-weight: 600;
+}
+
+.acciones-proyecto a:first-child {
+    color: #7138df;
+}
+
+.seccion-inferior-panel {
+    margin-top: 17px;
+}
+
+.panel-inferior {
+    height: 100%;
+    padding: 18px;
+}
+
+.etiqueta-panel {
+    padding: 6px 9px;
+    border-radius: 20px;
+    background: #f1ecff;
+    color: #6d37d6;
+    font-size: .56rem;
+    font-weight: 700;
+}
+
+.propuesta-recibida {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 0 0;
+}
+
+.persona-interesada {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 0 0;
+}
+
+.propuesta-recibida + .propuesta-recibida {
+    margin-top: 12px;
+    border-top: 1px solid #f0f0f5;
+}
+
+.persona-interesada + .persona-interesada {
+    margin-top: 12px;
+    border-top: 1px solid #f0f0f5;
+}
+
+.avatar-pequeno {
+    width: 32px;
+    height: 32px;
+    font-size: .57rem;
+}
+
+.propuesta-recibida section {
+    flex: 1;
+}
+
+.persona-interesada section {
+    flex: 1;
+}
+
+.propuesta-recibida strong {
+    color: #45475a;
+    font-size: .65rem;
+}
+
+.persona-interesada strong {
+    color: #45475a;
+    font-size: .65rem;
+}
+
+.propuesta-recibida p {
+    margin: 4px 0 2px;
+    color: #848596;
+    font-size: .59rem;
+}
+
+.persona-interesada p {
+    margin: 4px 0 2px;
+    color: #848596;
+    font-size: .59rem;
+}
+
+.propuesta-recibida small {
+    color: #a0a0ac;
+    font-size: .55rem;
+}
+
+.propuesta-recibida > a {
+    font-size: .63rem;
+    font-weight: 700;
+}
+
+.persona-interesada > a {
+    font-size: .63rem;
+    font-weight: 700;
+}
+
+.panel-formulario-proyecto {
+    margin-top: 18px;
+    padding: 22px;
+}
+
+.panel-formulario-proyecto .encabezado-panel-seccion {
+    margin-bottom: 20px;
+}
+
+.panel-formulario-proyecto .encabezado-panel-seccion .sobretitulo {
+    margin-bottom: 6px;
+    font-size: .59rem;
+}
+
+.formulario-proyecto .campo-acceso {
+    min-height: 43px;
+    border: 1px solid #e9eaf2;
+    background: #f9f9fd;
+    font-size: .7rem;
+}
+
+.formulario-proyecto textarea.campo-acceso {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.campo-archivos {
+    padding: 7px 10px;
+}
+
+.bienvenida-proyectos {
+    align-items: center;
+    margin-bottom: 28px;
+    padding: 22px 24px;
+    border-radius: 12px;
+    background: #fff;
+}
+.bienvenida-proyectos h1 {
+    color: #171a2b;
+    font-size: 2rem;
+}
+.bienvenida-proyectos p {
+    color: #555764;
+    font-size: .95rem;
+}
+.panel-proyectos {
+    margin-top: 0;
+    padding: 10px 24px;
+    border: 0;
+    border-radius: 12px;
+    background: #fff;
+}
+.fila-proyecto {
+    grid-template-columns: 54px 1fr 145px auto;
+    gap: 22px;
+    padding: 25px 0;
+    border-bottom-color: #dedbe7;
+}
+.simbolo-proyecto {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-family: Arial, sans-serif;
+    font-size: 1.15rem;
+}
+.estado-proyecto {
+    margin-bottom: 8px;
+    font-size: .72rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+.informacion-proyecto h3 {
+    color: #171a2b;
+    font-size: 1.3rem;
+}
+.informacion-proyecto > p:not(.estado-proyecto) {
+    color: #454754;
+    font-size: .92rem;
+    line-height: 1.65;
+}
+.actividad-proyecto {
+    color: #555764;
+    font-size: .78rem;
+}
+.actividad-proyecto strong {
+    color: #171a2b;
+    font-size: 1rem;
+}
+.acciones-proyecto {
+    align-items: flex-start;
+}
+.acciones-proyecto a {
+    font-size: .85rem;
+}
+.encabezado-panel {
+    border-bottom: 1px solid #292730;
+    background: #111118;
+}
+
+.encabezado-panel .usuario-panel {
+    color: #fff;
+}
+
+.distribucion-panel {
+    display: grid;
+    min-height: 700px;
+    grid-template-columns: 235px 1fr;
+    gap: 22px;
+    padding: 22px;
+}
+
+.barra-lateral-panel.barra-lateral-proyectos {
+    height: 640px;
+    padding: 24px 15px 18px;
+    border: 1px solid #e9e4f1;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.barra-lateral-proyectos .enlace-inicio-lateral {
+    border-top: 0;
+    border-radius: 9px;
+}
