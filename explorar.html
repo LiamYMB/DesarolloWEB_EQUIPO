@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar proyectos | DevLaunch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/explorar.css">
+</head>
+<body class="pagina-explorar">
+    <header class="encabezado-sitio"><nav class="navbar navbar-expand-lg container" aria-label="Navegación principal"><a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="DevLaunch, inicio"></a><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3"><li class="nav-item"><a class="nav-link activo" href="explorar.html">Explorar proyectos</a></li><li class="nav-item"><a class="nav-link" href="mi-perfil.html">Mi perfil</a></li><li class="nav-item"><a class="btn btn-primary rounded-pill px-4" href="registro.html">Crear cuenta</a></li></ul></nav></header>
+    <main>
+        <section class="portada-explorar"><section class="container"><h1>Encuentra el próximo proyecto que te inspire.</h1><p>Explora prototipos de software independiente y conoce a quienes los están construyendo.</p><form class="busqueda-explorar" action="#catalogo" method="get"><label class="visually-hidden" for="buscar-proyecto">Buscar proyectos</label><input id="buscar-proyecto" name="buscar" type="search" placeholder="Busca por proyecto, tecnología o creador"><button type="submit">Buscar proyectos</button></form></section></section>
+        <section class="container contenido-explorar" id="catalogo">
+            <header class="encabezado-explorar"><section><p class="sobretitulo sobretitulo-morado">Catálogo de la comunidad</p><h2>Proyectos para descubrir</h2></section><span class="etiqueta-demostracion">Contenido de demostración</span></header>
+            <section class="catalogo-proyectos row g-3">
+                    <article class="col-md-6 col-xl-4"><section class="tarjeta-proyecto"><a class="ilustracion-proyecto ilustracion-nebula" href="detalle-proyecto.html" aria-label="Ver detalle de Nebula"><span class="orbita-ilustracion"></span><span class="leyenda-ilustracion">NEBULA / CLOUD AUTOMATION</span></a><section class="contenido-proyecto"><p class="datos-proyecto"><span>IA &amp; Cloud</span><span>PROTOTIPO</span></p><h3><a href="detalle-proyecto.html">Nebula</a></h3><p>Orquestación de microservicios con asistencia contextual para equipos de desarrollo.</p><ul class="lista-etiquetas"><li>Rust</li><li>Kubernetes</li><li>Wasm</li></ul><footer class="pie-proyecto"><span>Por Elena Vega</span><strong>$18,400 <small>de $20,000</small></strong></footer><a class="enlace-proyecto" href="detalle-proyecto.html">Ver proyecto <span aria-hidden="true">→</span></a></section></section></article>
+                    <article class="col-md-6 col-xl-4"><section class="tarjeta-proyecto"><a class="ilustracion-proyecto ilustracion-opentask" href="detalle-proyecto.html" aria-label="Ver detalle de OpenTask"><span class="ventana-ilustracion"><i></i><i></i><i></i><b>OpenTask / tareas</b></span><span class="leyenda-ilustracion">LOCAL-FIRST WORKSPACE</span></a><section class="contenido-proyecto"><p class="datos-proyecto"><span>Open Source</span><span>EN DESARROLLO</span></p><h3><a href="detalle-proyecto.html">OpenTask</a></h3><p>Gestor de proyectos autoalojado, sincronización local y soporte para Markdown.</p><ul class="lista-etiquetas"><li>TypeScript</li><li>Next.js</li><li>SQLite</li></ul><footer class="pie-proyecto"><span>Por Carlos Méndez</span><strong>$12,300 <small>de $15,000</small></strong></footer><a class="enlace-proyecto" href="detalle-proyecto.html">Ver proyecto <span aria-hidden="true">→</span></a></section></section></article>
+                    <article class="col-md-6 col-xl-4"><section class="tarjeta-proyecto"><a class="ilustracion-proyecto ilustracion-pixel" href="detalle-proyecto.html" aria-label="Ver detalle de PixelForge"><span class="marco-pixel">✦<br><small>PIXEL<br>FORGE</small></span><span class="leyenda-ilustracion">2D / 3D CREATOR TOOLS</span></a><section class="contenido-proyecto"><p class="datos-proyecto"><span>GameDev</span><span>PROTOTIPO</span></p><h3><a href="detalle-proyecto.html">PixelForge</a></h3><p>Motor ligero para que creadores independientes publiquen experiencias 2D y 3D.</p><ul class="lista-etiquetas"><li>WebGPU</li><li>C++</li><li>Vulkan</li></ul><footer class="pie-proyecto"><span>Por Sofía Ramos</span><strong>$24,900 <small>de $25,000</small></strong></footer><a class="enlace-proyecto" href="detalle-proyecto.html">Ver proyecto <span aria-hidden="true">→</span></a></section></section></article>
+            </section>
+        </section>
+    </main>
+    <footer class="pie-sitio"><section class="container"><a href="index.html"><img src="img/Logo.png" alt="DevLaunch"></a><p>Ideas que se convierten en soluciones.</p><small>© 2025 DevLaunch</small></section></footer>
+</body>
+</html>
